@@ -1,5 +1,5 @@
-leb
-sol
-brasno
-zejtin
-sheker
+leb x 200
+sol x 30
+brasno x 50
+zejtin x 40
+sheker x 25
