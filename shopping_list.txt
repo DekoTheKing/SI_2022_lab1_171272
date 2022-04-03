@@ -3,3 +3,4 @@ sol x 30
 brasno x 50
 jogurt x 40
 sheker x 25
+jajca x 100
