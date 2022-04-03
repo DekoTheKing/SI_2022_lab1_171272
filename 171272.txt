@@ -1,0 +1,196 @@
+git remote add origin https://github.com/DekoTheKing/SI_2022_lab1_171272.git - kreiranje na remote repository
+git remote -v - pravime verifikacija na noviot remote
+git clone https://github.com/DekoTheKing/SI_2022_lab1_171272.git - kloniranje na repozitoriumot
+git add "shopping_list.txt" - dodavanje na tekstualnata datoteka vo lokalniot repozitorium
+git commit -m "Add 5 items to the shopping list" - commit poraka posle menuvanjeto na sodrzinata na shopping_list.txt taa stana untracked i more odnovo da se dodade
+git add "shopping_list.txt" - dodavanje povtorno (odnosno novata vezija na dadotekata so dodadeni kolicini na proizvodite)
+git commit -m "Add quantities to the items." - commit na updejtiranata datoteka so nova poraka
+git branch branch1 - kreirame nov branch so ime branch1
+git branch branch2 - kreirame nov branch so ime branch2
+
+////logs////
+
+commit 9f1a2b21e82c31db7ee2de1bd8cdee0ebea0c62c
+commit 9f1a2b21e82c31db7ee2de1bd8cdee0ebea0c62c
+commit 46d44c9f9ebd2514897263fde61d0b78643bc740 (HEAD -> master, branch2, branch1)
+Author: Dejan Serafimovski <serafimovskidejan@gmail.com>
+Date:   Sat Apr 2 23:12:42 2022 +0200
+
+    Add quantities to the items.
+
+commit 75046331d5bd51fa06af7c20fd22711705075e93
+Author: Dejan Serafimovski <serafimovskidejan@gmail.com>
+Date:   Sat Apr 2 22:52:36 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 908512bc0f12c4d0596a646808a460c9f030c0b0 (origin/master, origin/HEAD)
+Author: Dejan Serafimovski <101192308+DekoTheKing@users.noreply.github.com>
+Date:   Sat Apr 2 21:23:56 2022 +0200
+
+    Delete 171272.txt
+
+commit 20e4e49d48030a9d0606fd417bbe49195aa5f933
+Author: Dejan Serafimovski <101192308+DekoTheKing@users.noreply.github.com>
+Date:   Sat Apr 2 15:09:50 2022 +0200
+
+    Create 171272.txt
+
+commit 90acd6524dfbe0496cb7bdea8c4696c1d676a630
+Author: Dejan Serafimovski <101192308+DekoTheKing@users.noreply.github.com>
+Date:   Fri Apr 1 22:18:49 2022 +0200
+
+    Update README.md
+
+commit 9f1a2b21e82c31db7ee2de1bd8cdee0ebea0c62c
+Author: Dejan Serafimovski <101192308+DekoTheKing@users.noreply.github.com>
+Date:   Fri Apr 1 22:16:56 2022 +0200
+
+    Update README.md
+
+commit 38c3c677e70ac5d89c01c3973a76ac2b9d6df567
+Author: Dejan Serafimovski <101192308+DekoTheKing@users.noreply.github.com>
+Date:   Fri Apr 1 22:16:09 2022 +0200
+
+    Initial commit
+
+////logs////
+
+git push - lokalnite izmeni gi updateira vo remote repository
+git push origin master - go updateiram (push) najprvo masterot odnosno push na lokalniot master vo remote masterot na git
+git push --set-upstream origin branch1 -  pravam push na branch1 na git
+git push --set-upstream origin branch2 -  pravam push na branch2 na git
+git checkout branch1 - prefrlanje na branch1
+git add shopping_list.txt - posle promenata na kolicinata na 5tiot proizvod mora da ja dodaeme odnovo datotekata so novite promeni
+git commit -m "Change quantity of item #5" - po dodavanjeto pravime commit so poraka
+git checkout master - se vrajkame na grankata master
+git add shopping_list.txt - posle promenata na kolicinata na 2riot proizvod mora da ja dodaeme odnovo datotekata so novite promeni
+git commit -m "Change quantity of item #2" - po dodavanjeto pravime commit poraka
+git push origin master - pravam push na master na git
+git push origin branch1 - pravam push na branch1 na git
+git checkout branch2 - se prefrlame na grankata branch2
+git add shopping_list.txt - posle promenata na imeto na 4tiot proizvod mora da ja dodaeme odnovo datotekata so novite promeni
+git commit -m "Modify item #4" - po dodavanjeto pravime commit so poraka
+
+////logs////
+
+PS C:\Users\dejan\IdeaProjects\SI_2022_lab1_171272> git log
+commit a93821c50a4e978f90ff3d328285dde742755a0b (HEAD -> branch2)
+Author: Dejan Serafimovski <serafimovskidejan@gmail.com>
+Date:   Sun Apr 3 23:46:09 2022 +0200
+
+    Modify item #4
+
+commit 46d44c9f9ebd2514897263fde61d0b78643bc740 (origin/branch2)
+Author: Dejan Serafimovski <serafimovskidejan@gmail.com>
+Date:   Sat Apr 2 23:12:42 2022 +0200
+
+    Add quantities to the items.
+
+commit 75046331d5bd51fa06af7c20fd22711705075e93
+Author: Dejan Serafimovski <serafimovskidejan@gmail.com>
+Date:   Sat Apr 2 22:52:36 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 908512bc0f12c4d0596a646808a460c9f030c0b0
+Author: Dejan Serafimovski <101192308+DekoTheKing@users.noreply.github.com>
+Date:   Sat Apr 2 21:23:56 2022 +0200
+
+    Delete 171272.txt
+
+commit 20e4e49d48030a9d0606fd417bbe49195aa5f933
+Author: Dejan Serafimovski <101192308+DekoTheKing@users.noreply.github.com>
+Date:   Sat Apr 2 15:09:50 2022 +0200
+
+    Create 171272.txt
+
+commit 90acd6524dfbe0496cb7bdea8c4696c1d676a630
+Author: Dejan Serafimovski <101192308+DekoTheKing@users.noreply.github.com>
+Date:   Fri Apr 1 22:18:49 2022 +0200
+
+    Update README.md
+
+commit 9f1a2b21e82c31db7ee2de1bd8cdee0ebea0c62c
+Author: Dejan Serafimovski <101192308+DekoTheKing@users.noreply.github.com>
+Date:   Fri Apr 1 22:16:56 2022 +0200
+
+    Update README.md
+
+commit 38c3c677e70ac5d89c01c3973a76ac2b9d6df567
+Author: Dejan Serafimovski <101192308+DekoTheKing@users.noreply.github.com>
+Date:   Fri Apr 1 22:16:09 2022 +0200
+
+    Initial commit
+
+////logs////
+
+
+git add shopping_list.txt - posle dodadavnjeto na nov 6ti proizvod ja dodavame povtorno datotekata
+git commit -m "Modify item #4 and add item #6" - pravime commit poraka
+
+
+////logs////
+
+PS C:\Users\dejan\IdeaProjects\SI_2022_lab1_171272> git log
+commit 58574cbecd971f7b4cac1537db3e8633759248f0 (HEAD -> branch2)
+Author: Dejan Serafimovski <serafimovskidejan@gmail.com>
+Date:   Sun Apr 3 23:55:43 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit a93821c50a4e978f90ff3d328285dde742755a0b
+Author: Dejan Serafimovski <serafimovskidejan@gmail.com>
+Date:   Sun Apr 3 23:46:09 2022 +0200
+
+    Modify item #4
+
+commit 46d44c9f9ebd2514897263fde61d0b78643bc740 (origin/branch2)
+Author: Dejan Serafimovski <serafimovskidejan@gmail.com>
+Date:   Sat Apr 2 23:12:42 2022 +0200
+
+    Add quantities to the items.
+
+commit 75046331d5bd51fa06af7c20fd22711705075e93
+Author: Dejan Serafimovski <serafimovskidejan@gmail.com>
+Date:   Sat Apr 2 22:52:36 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 908512bc0f12c4d0596a646808a460c9f030c0b0
+Author: Dejan Serafimovski <101192308+DekoTheKing@users.noreply.github.com>
+Date:   Sat Apr 2 21:23:56 2022 +0200
+
+    Delete 171272.txt
+
+commit 20e4e49d48030a9d0606fd417bbe49195aa5f933
+Author: Dejan Serafimovski <101192308+DekoTheKing@users.noreply.github.com>
+Date:   Sat Apr 2 15:09:50 2022 +0200
+
+    Create 171272.txt
+
+commit 90acd6524dfbe0496cb7bdea8c4696c1d676a630
+Author: Dejan Serafimovski <101192308+DekoTheKing@users.noreply.github.com>
+Date:   Fri Apr 1 22:18:49 2022 +0200
+
+    Update README.md
+
+commit 9f1a2b21e82c31db7ee2de1bd8cdee0ebea0c62c
+Author: Dejan Serafimovski <101192308+DekoTheKing@users.noreply.github.com>
+Date:   Fri Apr 1 22:16:56 2022 +0200
+
+    Update README.md
+
+commit 38c3c677e70ac5d89c01c3973a76ac2b9d6df567
+Author: Dejan Serafimovski <101192308+DekoTheKing@users.noreply.github.com>
+Date:   Fri Apr 1 22:16:09 2022 +0200
+
+    Initial commit
+
+////logs////
+
+
+git checkout msater - se prefrlame na grankata master
+git merge master branch1 - pravime merge na master so branch1
+git merge master branch2 - pravime merge so branch2 megjutoa prethodno go reshavame konfliktot koj se pojavi vo shopping_list.txt
+git commit -a -m "Merge branch 'branch2'" - pravime merge commit
