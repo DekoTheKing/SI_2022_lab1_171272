@@ -2,4 +2,4 @@ leb x 200
 sol x 56
 brasno x 50
 zejtin x 40
-sheker x 25
+sheker x 75
