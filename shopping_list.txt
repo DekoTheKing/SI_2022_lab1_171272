@@ -3,3 +3,6 @@ sol x 56
 brasno x 50
 zejtin x 40
 sheker x 75
+jogurt x 40
+jajca x 100
+
